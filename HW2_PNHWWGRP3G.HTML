@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTL Assignment</title>
+</head>
+<body>
+  
+
+
+  <button id="getter" type="button">
+    GET DATE
+  </button>
+
+  <div style="margin-top:100px" id="showdate">
+    <script>
+      var dateget = document.getElementById("getter");
+ 
+      dateget.addEventListener("click", function(){
+        let nowdate = new Date();
+      document.getElementById("showdate").innerHTML = nowdate;
+      }); 
+    </script>
+  
+  </div>
+
+</body>
+</html>
